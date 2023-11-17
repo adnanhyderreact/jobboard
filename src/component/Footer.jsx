@@ -149,6 +149,9 @@ export default function Footer() {
                     </div>
                 </div>
             </footer>
+            <div className="copyright-text text-center">
+                <p>Copyright @2021 Jovie. All Rights Reserved By </p>
+            </div>
         </>
     )
 }
