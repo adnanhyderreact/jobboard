@@ -159,7 +159,9 @@ export default function Header() {
 
                                 <div className="other-option">
                                     <a href="sign-up.html" className="signup-btn">Sign Up</a>
-                                    <a href="sign-in.html" className="signin-btn">Sign In</a>
+
+                                    <Link to='/signin' className="signin-btn">Sign In</Link>
+
                                 </div>
                             </div>
                         </nav>
