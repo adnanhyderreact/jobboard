@@ -1,10 +1,10 @@
-export default function PageTitle() {
+export default function PageTitle({title}) {
     return (
         <>
             <section className="page-title title-bg1">
                 <div className="d-table">
                     <div className="d-table-cell">
-                        <h2>About Us</h2>
+                        <h2>{title}</h2>
                         <ul>
                             <li>
                                 <a href="index.html">Home</a>

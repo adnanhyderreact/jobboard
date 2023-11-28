@@ -5,14 +5,13 @@ import Testimonial from "../component/subcomponents/Testimonial";
 import Blog from "../component/subcomponents/Blog";
 import PageTitle from "../component/subcomponents/PageTitle";
 import WhyUse from "../component/subcomponents/WhyUse";
-import GrowBusiness from "../component/subcomponents/GrowBusiness";
 import AboutDetail from "../component/subcomponents/AboutDetail";
 
 export default function About() {
     return (
         <>
             <Layout>
-                <PageTitle/>
+                <PageTitle title='About'/>
                 <AboutDetail/>
                 <WhyChoose/>
                 <WhyUse/>

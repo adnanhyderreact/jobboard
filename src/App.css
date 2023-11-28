@@ -2579,6 +2579,7 @@ h3 {
     z-index: 1;
     text-align: center;
     overflow: hidden;
+    margin-bottom: 50px;
 }
 
 .page-title::before {

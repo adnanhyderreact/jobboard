@@ -1,9 +1,7 @@
 import PreLoader from "./PreLoader";
-import {useNavigate} from "react-router";
 import {Link} from "react-router-dom";
 
 export default function Header() {
-    const navigate = useNavigate();
     return (
         <>
             <PreLoader/>
@@ -49,7 +47,7 @@ export default function Header() {
                                         <Link to='/about' className="nav-link">About</Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a href="#" className="nav-link dropdown-toggle">Jobs</a>
+                                        <Link to='/jobs' className="nav-link">Jobs</Link>
 
                                         <ul className="dropdown-menu">
                                             <li className="nav-item">
@@ -141,7 +139,7 @@ export default function Header() {
                                         </ul>
                                     </li>
                                     <li className="nav-item">
-                                        <a href="#" className="nav-link dropdown-toggle">Blog</a>
+                                        <Link to='/blog' className="nav-link">Blogs</Link>
                                         <ul className="dropdown-menu">
                                             <li className="nav-item">
                                                 <a href="blog.html" className="nav-link">Blog</a>

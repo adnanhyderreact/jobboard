@@ -28,7 +28,7 @@ export default function Home() {
                 <Counter/>
                 <Testimonial/>
                 <Pricing/>
-                <Blog/>
+                <Blog items={3}/>
             </Layout>
         </>
     )
