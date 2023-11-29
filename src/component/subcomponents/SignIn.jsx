@@ -1,20 +1,23 @@
 import React, {useState} from 'react';
 import axios from 'axios';
+import {useNavigate} from 'react-router-dom';
+import {logIn} from "../../helper/global";
 
 export default function SignIn() {
     const [password, setPassword] = useState('');
     const [error, setError] = useState(null);
-
+    const navigate = useNavigate();
     const handleSignIn = async (e) => {
         e.preventDefault();
-
         try {
             const response = await axios.post('https://dummyjson.com/auth/login', {
                 username: 'kminchelle',
                 password: password,
             });
 
-            console.log('Signed in!', response.data);
+            if (logIn(response.data)) {
+                navigate('/dashboard');
+            }
         } catch (error) {
             setError('Invalid email or password. Please try again.'); // Handle error states as needed
         }

@@ -19,7 +19,6 @@ export default function BlogCards({items}) {
 
     const BlogCards = [];
     {
-        console.log(posts);
         posts.posts && posts.posts.map((post, index) => (
                 BlogCards.push(
                     <div className="col-lg-4 col-sm-6" key={post.id}>
